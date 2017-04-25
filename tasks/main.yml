@@ -28,6 +28,7 @@
     state: "present"
   with_items:
     - python-psycopg2
+    - python3-psycopg2
     - libpq-dev
 
 #- name: "Create PostgreSQL database service if failed on installation"

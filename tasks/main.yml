@@ -32,8 +32,8 @@
     - libpq-dev
 
 #- name: "Create PostgreSQL database service if failed on installation"
-#  command: pg_createcluster 9.3 main --start
+#  command: pg_createcluster {{ postgres_version }} main --start
 #  environment:
 #    LC_ALL: "{{ pg_locale }}"
 #  args:
-#    creates: /etc/postgresql/9.3/main
+#    creates: /etc/postgresql/{{ postgres_version }}/main
